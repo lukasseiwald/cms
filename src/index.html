@@ -39,13 +39,15 @@ TODO:
     <link rel="canonical" href="http://www.example.com/">
     -->
 
+    <link href="https://fonts.googleapis.com/css?family=Slabo+13px" rel="stylesheet">
+
   </head>
   <body>
     <!-- Add your site content here -->
 
     <header>
-      <nav>
-        <h1>Alex Sumner</h1>
+      <h1>Alex Sumner</h1>
+      <nav id="mainnav">
         <ul>
           <li>
             <a href="start.html">Start</a>
@@ -66,9 +68,9 @@ TODO:
       </nav>
     </header>
 
-    <section name="start">
+    <section name="start" id="hero">
       <h1>
-        Webdesign mit Sinn und Zweck und XYZ
+        <span>Webdesign mit Sinn und Zweck und XYZ</span>
       </h1>
       <button onclick="window.location.href='https://www.google.at'">
         Angebot einholen
@@ -79,30 +81,32 @@ TODO:
       <h2>
         Leistungen
       </h2>
-      <a href="design.html">
-      <div>
-        <h3>
-          Design
-        </h3>
-        <img src="images/icons/design.png" title="designicon" alt="dies ist ein Icon das Design symbolisiert, eine Pinselbüchse für Maler"/>
+      <div id="flexwrapper">
+        <a href="design.html">
+        <div>
+          <h3>
+            Design
+          </h3>
+          <img src="images/icons/design.png" title="designicon" alt="dies ist ein Icon das Design symbolisiert, eine Pinselbüchse für Maler"/>
+        </div>
+        </a>
+        <a href="strategie.html">
+          <div>
+            <h3>
+              Strategie
+            </h3>
+            <img src="images/icons/strategy.png" title="strategieicon" alt="dies ist ein Icon das eine Strategie symbolisiert, eine Zielscheibe"/>
+          </div>
+        </a>
+        <a href="design.html">
+          <div>
+            <h3>
+              Consulting
+            </h3>
+            <img src="images/icons/consulting.png" title="consultingicon" alt="dies ist ein Icon das Consulting symbolisiert, eine Glühbirne"/>
+          </div>
+        </a>
       </div>
-      </a>
-      <a href="strategie.html">
-        <div>
-          <h3>
-            Strategie
-          </h3>
-          <img src="images/icons/strategy.png" title="strategieicon" alt="dies ist ein Icon das eine Strategie symbolisiert, eine Zielscheibe"/>
-        </div>
-      </a>
-      <a href="design.html">
-        <div>
-          <h3>
-            Consulting
-          </h3>
-          <img src="images/icons/consulting.png" title="consultingicon" alt="dies ist ein Icon das Consulting symbolisiert, eine Glühbirne"/>
-        </div>
-      </a>
     </section>
 
     <section id="news">
@@ -120,7 +124,6 @@ TODO:
     </section>
 
     <footer>
-
     </footer>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->

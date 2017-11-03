@@ -1,0 +1,49 @@
+#leistungen{
+    padding: 20px 20px;
+
+    h2{
+    margin-top: 1em;
+    font-size: 2em;
+    color: $myblue;
+    padding-bottom: 1em;
+    padding-left: 20px;
+    line-height: 2em;
+
+
+    }
+    #flexwrapper{
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-right: 20px;
+
+      a{
+        text-decoration: none;
+        color: $myblue;
+        text-align: center;
+        font-weight: bold;
+        font-size: 25px;
+
+        div{
+            background-color: #EEEEEE;
+            margin-left: 20px;
+            &:hover{
+              background-color: #DDDDDD;
+            }
+          h3{
+            padding-top: 1em;
+          }
+          img{
+            padding-top: 1em;
+            padding-bottom: 1em;
+            width: 70%;
+
+          }
+        }
+      }
+    }
+
+
+
+
+}

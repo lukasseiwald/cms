@@ -1,0 +1,38 @@
+#hero{
+  background-image: url('./images/hero.jpg');
+  background-size: cover;
+  height: 30em;
+  display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+  h1{
+    color: $myblue;
+    margin-top: 1em;
+    font-size: 4em;
+
+    margin-left: 290px;
+    line-height: 140%;
+    height: 4em;
+    span{
+        background-color: white;
+    }
+  }
+
+  button{
+    font-size: 30px;
+    color: white;
+    background-color: $myblue;
+    height: 3em;
+    text-decoration: none;
+    list-style-type: none;
+    border: $myblue ;
+    border-radius: 6px;
+    margin-left: 9.65em;
+
+    &:hover{
+      background-color: #116BA9;
+    }
+  }
+}
