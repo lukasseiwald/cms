@@ -1,38 +1,38 @@
-#hero{
-  background-image: url('./images/hero.jpg');
-  background-size: cover;
-  height: 30em;
-  display: -webkit-flex;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
+section#hero{
+	background-image: url("./images/hero.jpg");
+	background-size: cover;
+	height: 25em;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 
-  h1{
-    color: $myblue;
-    margin-top: 1em;
-    font-size: 4em;
+	.wrapper {
+		width: 50%;
+	}
 
-    margin-left: 290px;
-    line-height: 140%;
-    height: 4em;
-    span{
-        background-color: white;
-    }
-  }
+	h1{
+		width: 85%;
+		line-height: 1.8em;
+		font-size:3.2em;
+		color: $myblue;
+		span{
+			padding: 0.2em;
+			background-color: white;
+		}
+	}
 
-  button{
-    font-size: 30px;
-    color: white;
-    background-color: $myblue;
-    height: 3em;
-    text-decoration: none;
-    list-style-type: none;
-    border: $myblue ;
-    border-radius: 6px;
-    margin-left: 9.65em;
-
-    &:hover{
-      background-color: #116BA9;
-    }
-  }
+	button{
+		font-weight: bold;
+		margin-top: 0.5em;
+		height: 2.7em;
+		color: white;
+		background-color: $myblue;
+		padding: 0.7em;
+		font-size: 1.3em;
+		border-radius: 0.4em;
+		font-family: 'Slabo 13px', serif;
+		&:hover{
+			cursor: pointer;
+		}
+	}
 }

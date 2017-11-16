@@ -34,96 +34,101 @@ TODO:
     <meta name="msapplication-TileColor" content="#3372DF">
 
     <link rel="stylesheet" type="text/css" href="style.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Slabo+13px" rel="stylesheet">
     <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
     <!--
     <link rel="canonical" href="http://www.example.com/">
     -->
-
-    <link href="https://fonts.googleapis.com/css?family=Slabo+13px" rel="stylesheet">
 
   </head>
   <body>
     <!-- Add your site content here -->
 
     <header>
-      <h1>Alex Sumner</h1>
-      <nav id="mainnav">
+			<h1>Alex Summer</h1>
+      <nav>
         <ul>
           <li>
-            <a href="start.html">Start</a>
+            <a href="#">Start</a>
           </li>
           <li>
-            <a href="leistungen.html">Leistungen</a>
+            <a href="#">Leistungen</a>
           </li>
           <li>
-            <a href="blog.html">Blog</a>
+            <a href="#">Blog</a>
           </li>
           <li>
-            <a href="übermich.html">Über mich</a>
+            <a href="#">Über mich</a>
           </li>
           <li>
-            <a href="kontakt.html">Kontakt</a>
+            <a href="#">Kontakt</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <section name="start" id="hero">
-      <h1>
-        <span>Webdesign mit Sinn und Zweck und XYZ</span>
-      </h1>
-      <button onclick="window.location.href='https://www.google.at'">
-        Angebot einholen
-      </button>
+    <section id="hero">
+			<div class="wrapper">
+				<h1>
+					<span>
+	        Webdesign mit Sinn und Zweck und XYZ
+					</span>
+	      </h1>
+	      <button onclick="window.location.href='https://www.google.at'">
+	        Angebot einholen
+	      </button>
+			</div>
     </section>
 
     <section id="leistungen">
       <h2>
         Leistungen
       </h2>
-      <div id="flexwrapper">
-        <a href="design.html">
-        <div>
+			<div id="container">
+			<div class="icon">
+      <a href="design.html">
+        <h3>
+          Design
+        </h3>
+        <img src="images/icons/design.png" title="designicon" alt="dies ist ein Icon das Design symbolisiert, eine Pinselbüchse für Maler"/>
+      </a>
+		</div>
+		<div class="icon">
+      <a href="strategie.html">
           <h3>
-            Design
+            Strategie
           </h3>
-          <img src="images/icons/design.png" title="designicon" alt="dies ist ein Icon das Design symbolisiert, eine Pinselbüchse für Maler"/>
-        </div>
-        </a>
-        <a href="strategie.html">
-          <div>
-            <h3>
-              Strategie
-            </h3>
-            <img src="images/icons/strategy.png" title="strategieicon" alt="dies ist ein Icon das eine Strategie symbolisiert, eine Zielscheibe"/>
-          </div>
-        </a>
-        <a href="design.html">
-          <div>
-            <h3>
-              Consulting
-            </h3>
-            <img src="images/icons/consulting.png" title="consultingicon" alt="dies ist ein Icon das Consulting symbolisiert, eine Glühbirne"/>
-          </div>
-        </a>
-      </div>
+          <img src="images/icons/strategy.png" title="strategieicon" alt="dies ist ein Icon das eine Strategie symbolisiert, eine Zielscheibe"/>
+      </a>
+		</div>
+			<div class="icon">
+      <a href="design.html">
+          <h3>
+            Consulting
+          </h3>
+          <img src="images/icons/consulting.png" title="consultingicon" alt="dies ist ein Icon das Consulting symbolisiert, eine Glühbirne"/>
+      </a>
+		</div>
+		</div>
     </section>
 
     <section id="news">
       <h2>
         News
       </h2>
-      <div>
-      </div>
+      <div class="infobox">
+			</div>
     </section>
 
-    <section id="referenzen">
+    <section id="references">
       <h2>
         Referenzen
       </h2>
     </section>
 
     <footer>
+
     </footer>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->

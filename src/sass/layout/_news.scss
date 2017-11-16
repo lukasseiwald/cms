@@ -1,17 +1,9 @@
-#news{
-  padding: 20px 20px;
-
-
-  h2{
-  margin-top: 1em;
-  font-size: 3em;
-  color: $myblue;
-  padding-bottom: 1em;
-  }
-
-  div{
-    height: 9em;
-    background-color: #EEEEEE;
-
-  }
+section#news{
+	div.infobox{
+		border-radius: 0.4em;
+		margin: 0.5em 0.5em 0.5em 0.4em;
+		height: 10em;
+		background-color: $mygrey2;
+	}
+	padding-bottom: 2em;
 }
