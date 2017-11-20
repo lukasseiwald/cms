@@ -1,0 +1,210 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*, *:after, *:before {
+  box-sizing: border-box; }
+
+html, body, button {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  /*Reset's every elements apperance*/
+  background: none repeat scroll 0 0 transparent;
+  border: medium none;
+  border-spacing: 0;
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0; }
+
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+html {
+  font-family: 'Slabo 13px', serif;
+  font-size: 20px; }
+
+*, *:after, *:before {
+  box-sizing: border-box; }
+
+.max-width-container {
+  width: 100%;
+  padding: 0 1em; }
+
+.container {
+  width: 100%;
+  max-width: 80em;
+  margin: 0 auto;
+  position: relative; }
+
+.grid:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+[class*='col-'] {
+  float: left;
+  padding-right: 1em; }
+  .grid [class*='col-']:last-of-type {
+    padding-right: 0; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 1em 0.5em 1em; }
+  header nav {
+    padding-top: 1.1em; }
+  header ul {
+    display: flex; }
+    header ul li {
+      padding-right: 0.7em; }
+      header ul li:last-of-type {
+        padding: 0; }
+  header h1 {
+    color: #009fe3;
+    font-weight: bold;
+    font-size: 3em; }
+  header a {
+    text-decoration: none;
+    color: #1d1d1b;
+    font-size: 1.2em; }
+    header a:hover {
+      transition: all 0.7s;
+      color: #009fe3;
+      border-bottom: 2px solid #009fe3; }
+
+section#hero {
+  background-image: url("./images/hero.jpg");
+  background-size: cover;
+  height: 25em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  section#hero .wrapper {
+    width: 50%; }
+  section#hero h1 {
+    width: 85%;
+    line-height: 1.8em;
+    font-size: 3.2em;
+    color: #009fe3; }
+    section#hero h1 span {
+      padding: 0.2em;
+      background-color: white; }
+  section#hero button {
+    font-weight: bold;
+    margin-top: 0.5em;
+    height: 2.7em;
+    color: white;
+    background-color: #009fe3;
+    padding: 0.7em;
+    font-size: 1.3em;
+    border-radius: 0.4em;
+    font-family: 'Slabo 13px', serif; }
+    section#hero button:hover {
+      cursor: pointer; }
+
+h2 {
+  color: #009fe3;
+  font-size: 2em;
+  padding: 0.5em 0.5em 0.5em 0.4em; }
+
+#leistungen {
+  padding-top: 1.7em;
+  padding-bottom: 1.7em; }
+  #leistungen #container {
+    padding: 1em 0.7em 0.7em 0.7em;
+    display: flex;
+    justify-content: space-between; }
+    #leistungen #container .icon {
+      border-radius: 0.4em;
+      background-color: #f6f6f6;
+      width: 20em;
+      height: 20em;
+      padding: 0.5em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    #leistungen #container a {
+      text-decoration: none;
+      color: #009fe3;
+      font-size: 1.7em;
+      text-align: center; }
+    #leistungen #container h3 {
+      font-size: 0.9em;
+      width: 100%;
+      margin-bottom: 1em; }
+    #leistungen #container img {
+      height: 8em;
+      width: auto; }
+
+section#news h3 {
+  text-align: center;
+  font-size: 1.2em;
+  width: 100%;
+  margin-bottom: 1em;
+  color: #009fe3; }
+
+section#news div.infobox {
+  border-radius: 0.4em;
+  margin: 0.5em 0.5em 0.5em 0.4em;
+  background-color: #f6f6f6; }
+
+section#news .infobox {
+  display: flex;
+  justify-content: space-between; }
+  section#news .infobox .news {
+    width: 20em;
+    padding: 1em;
+    padding-bottom: 3em;
+    font-size: 0.9em;
+    line-height: 1.5em; }
+
+#references {
+  display: flex;
+  justify-content: space-between; }
+
+footer {
+  background-color: #009fe3;
+  height: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; }

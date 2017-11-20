@@ -1,4 +1,10 @@
 footer {
 	background-color: $myblue;
 	height: 10em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	margin-top: 2.5em;
+	padding: 3em;
 }

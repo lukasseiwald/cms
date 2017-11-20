@@ -1,9 +1,41 @@
 section#news{
+	h3{
+		text-align: center;
+		font-size: 1.2em;
+		width: 100%;
+		margin-bottom: 1em;
+		color: $myblue;
+	}
 	div.infobox{
 		border-radius: 0.4em;
 		margin: 0.5em 0.5em 0.5em 0.4em;
-		height: 10em;
 		background-color: $mygrey2;
 	}
-	padding-bottom: 2em;
+	.infobox{
+		display: flex;
+		justify-content: space-between;
+		.news{
+			width: 20em;
+			padding: 1em;
+			padding-bottom: 3em;
+			font-size: 0.9em;
+			line-height: 1.5em;
+		}
+	}
+	@media screen and (max-width: 730px) {
+		.infobox{
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			.news{
+				width: 90%;
+			}
+		}
+	}
 }
+
+
+//1120
+//999
+//730
+//400
