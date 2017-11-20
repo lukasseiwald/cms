@@ -29,4 +29,119 @@ header{
 			border-bottom: 2px solid $myblue;
 		}
 	}
+	.burgerwrapper{
+		display: none;
+		cursor: pointer;
+		position: absolute;
+		width: 4em;
+		height: 3em;
+		right: 0;
+		margin-top: -2.9em;
+		margin-right: 0.7em;
+
+		.burger{
+			margin-top: 1.5em;
+			right: 0;
+	    background-color: #449EDD;
+	    border-style: none;
+			width: 3.3em;
+			height: 0.4em;
+	    transition: all 1s ease-out;
+
+	    &::before{
+				margin-top: 1.5em;
+	      position: absolute;
+	      content: "";
+	      width: 3.3em;
+	      height: 0.4em;
+	      top: 0;
+	      left: 0;
+	      background-color: inherit;
+	      transform: translate( 0, -0.7em);
+	      transition: all 2s ease;
+	    }
+	    &::after{
+				margin-top: 1.5em;
+	      position: absolute;
+	      content: "";
+	      width: 3.3em;
+	      height: 0.4em;
+	      top: 0;
+	      left: 0;
+	      background-color: inherit;
+	      transform: translate( 0, 0.7em);
+	       transition: all 2s ease;
+	    }
+	  }
+	}
+
+	.burger.x{
+		background-color: transparent;
+		cursor: pointer;
+		&:before{
+			transform: rotate(45deg);
+				background-color: #333;
+		}
+		&:after{
+			transform: rotate(315deg);
+				background-color: #333;
+		}
+	}
+
+	@media (max-width:999px){
+		h1{
+			padding-top: 0.2em;
+			font-size: 2em;
+		}
+	}
+	@media (max-width:850px){
+		display: block;
+		.burgerwrapper{
+			display: block;
+		}
+		h1{
+			font-size: 2em;
+			width: 10em;
+		}
+		nav{
+			display: none;
+			width: 100%;
+			margin-top: -4.5em;
+			ul{
+				display: block;
+				margin-top: 5em;
+				background-color: white;
+				li{
+					width: 100%;
+					border-bottom: 1px solid #555;
+					padding-bottom: 0.7em;
+					padding-top: 0.7em;
+					text-align: center;
+					a{
+						&:hover{
+							color: $myblue;
+							border-bottom: 0px solid $myblue;
+						}
+					}
+					&:last-of-type{
+						padding-top: 0.7em;
+						padding-bottom: 0.7em;
+					}
+				}
+			}
+		}
+
+		nav.drop{
+			display: block;
+		}
+		&.h{
+			padding-bottom: 0;
+		}
+	}
+	@media (max-width:450px){
+		h1{
+			font-size: 1.6em;
+			padding-top: 0.4em;
+		}
+	}
 }

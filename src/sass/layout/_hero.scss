@@ -35,4 +35,28 @@ section#hero{
 			cursor: pointer;
 		}
 	}
+	@media (max-width:1120px){
+		.wrapper {
+			width: 80%;
+		}
+	}
+
+	@media (max-width:999px){
+		.wrapper {
+			width: 80%;
+		}
+	}
+	@media (max-width:730px){
+		h1{
+			font-size: 2.5em;
+		}
+	}
+	@media (max-width:400px){
+		h1{
+			font-size: 2em;
+		}
+		button{
+			font-size: 0.9em;
+		}
+	}
 }
