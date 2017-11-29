@@ -1,0 +1,22 @@
+section#uebermich{
+  img{
+    height: 12em;
+    width: auto;
+    border-radius: 12em;
+  }
+  div.uebermichtext{
+    width: 40vw;
+    line-height: 2em;
+  }
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (max-width: 700px) {
+    div.uebermichtext{
+      width: 80vw;
+      line-height: 2em;
+    }
+	}
+}

@@ -35,3 +35,6 @@ tags
 Session.vim
 .netrwhist
 *~
+
+# wordpress
+wordpress/wp-config.php
