@@ -33,7 +33,7 @@ header{
 		display: none;
 		cursor: pointer;
 		position: absolute;
-		width: 4em;
+		width: 2.8em;
 		height: 3em;
 		right: 0;
 		margin-top: -2.9em;
@@ -44,33 +44,33 @@ header{
 			right: 0;
 	    background-color: #449EDD;
 	    border-style: none;
-			width: 3.3em;
-			height: 0.4em;
-	    transition: all 1s ease-out;
+			width: 2.4em;
+			height: 0.3em;
+	    transition: all 0.3s ease-out;
 
 	    &::before{
 				margin-top: 1.5em;
 	      position: absolute;
 	      content: "";
-	      width: 3.3em;
-	      height: 0.4em;
+				width: 2.4em;
+				height: 0.3em;
 	      top: 0;
 	      left: 0;
 	      background-color: inherit;
 	      transform: translate( 0, -0.7em);
-	      transition: all 2s ease;
+	      transition: all 0.5s ease;
 	    }
 	    &::after{
 				margin-top: 1.5em;
 	      position: absolute;
 	      content: "";
-	      width: 3.3em;
-	      height: 0.4em;
+				width: 2.4em;
+				height: 0.3em;
 	      top: 0;
 	      left: 0;
 	      background-color: inherit;
 	      transform: translate( 0, 0.7em);
-	       transition: all 2s ease;
+	       transition: all 0.5s ease;
 	    }
 	  }
 	}
@@ -81,6 +81,7 @@ header{
 		&:before{
 			transform: rotate(45deg);
 				background-color: #333;
+				width: 2.4em;
 		}
 		&:after{
 			transform: rotate(315deg);
